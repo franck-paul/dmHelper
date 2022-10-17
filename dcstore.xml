@@ -1,0 +1,12 @@
+<modules xmlns:da="http://dotaddict.org/da/">
+  <module id="dmHelper">
+    <name>Dashboard Module Helper Library</name>
+    <version>1.0</version>
+    <author>Franck Paul</author>
+    <desc>Helper library for Dashboard Modules</desc>
+    <file>https://github.com/franck-paul/dmHostingMonitor/releases/download/1.0/plugin-dmHelper-1.0.zip</file>
+    <da:dcmin>2.24</da:dcmin>
+    <da:details>https://open-time.net/?q=dmHelper</da:details>
+    <da:support>https://github.com/franck-paul/dmHelper</da:support>
+  </module>
+</modules>
