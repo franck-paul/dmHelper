@@ -24,4 +24,8 @@ if (!defined('DC_CONTEXT_ADMIN')) {
 
 Clearbricks::lib()->autoload([
     'dmHelperBehaviors' => __DIR__ . '/inc/admin.behaviors.php',
+    'dmHelperRest'      => __DIR__ . '/_services.php',
 ]);
+
+// Register REST methods
+dcCore::app()->rest->addFunction('dmHelperPing', [dmHelperRest::class, 'ping']);

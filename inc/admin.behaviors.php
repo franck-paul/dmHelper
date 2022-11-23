@@ -15,7 +15,7 @@ class dmHelperBehaviors
     public static function adminDashboardHeaders()
     {
         return
-        dcPage::jsModuleLoad('dmHelper/js/service.js', dcCore::app()->getVersion('dmHelper')) .
-        dcPage::cssModuleLoad('dmHelper/css/style.css', 'screen', dcCore::app()->getVersion('dmHelper'));
+        dcPage::jsModuleLoad('dmHelper/js/service.min.js', dcCore::app()->getVersion('dmHelper')) .
+        dcPage::cssModuleLoad('dmHelper/css/style.min.css', 'screen', dcCore::app()->getVersion('dmHelper'));
     }
 }
