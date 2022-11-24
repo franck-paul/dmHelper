@@ -6,7 +6,7 @@ Dotclear 2 plugin
 
 Provides a dashboard module helper library.
 
-## Minified versions of CSS and Js are done with a pre-commit hook
+## Minified versions of CSS and Js may be done with a pre-commit hook
 
 ```bash
 # Minify CSS and Js
