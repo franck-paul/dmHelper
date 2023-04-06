@@ -10,7 +10,11 @@
  * @copyright Franck Paul carnet.franck.paul@gmail.com
  * @copyright GPL-2.0 https://www.gnu.org/licenses/gpl-2.0.html
  */
-class dmHelperRest
+declare(strict_types=1);
+
+namespace Dotclear\Plugin\dmHelper;
+
+class BackendRest
 {
     /**
      * Serve method to ping current server.

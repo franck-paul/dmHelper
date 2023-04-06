@@ -9,5 +9,7 @@
 # DOT NOT MODIFY THIS FILE !
 #
 
-l10n::$locales['Dashboard Module Helper Library'] = '';
-l10n::$locales['Helper library for Dashboard Modules'] = '';
+use Dotclear\Helper\L10n;
+
+L10n::$locales['Dashboard Module Helper Library'] = '';
+L10n::$locales['Helper library for Dashboard Modules'] = '';

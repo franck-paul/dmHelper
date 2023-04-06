@@ -10,12 +10,19 @@
  * @copyright Franck Paul carnet.franck.paul@gmail.com
  * @copyright GPL-2.0 https://www.gnu.org/licenses/gpl-2.0.html
  */
-class dmHelperBehaviors
+declare(strict_types=1);
+
+namespace Dotclear\Plugin\dmHelper;
+
+use dcCore;
+use dcPage;
+
+class BackendBehaviors
 {
     public static function adminDashboardHeaders()
     {
         return
-        dcPage::jsModuleLoad('dmHelper/js/service.min.js', dcCore::app()->getVersion('dmHelper')) .
-        dcPage::cssModuleLoad('dmHelper/css/style.min.css', 'screen', dcCore::app()->getVersion('dmHelper'));
+        dcPage::jsModuleLoad(My::id() . '/js/service.js', dcCore::app()->getVersion('dmHelper')) .
+        dcPage::cssModuleLoad(My::id() . '/css/style.css', 'screen', dcCore::app()->getVersion('dmHelper'));
     }
 }
