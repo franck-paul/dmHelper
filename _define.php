@@ -14,7 +14,7 @@ $this->registerModule(
     'Dashboard Module Helper Library',
     'Helper library for Dashboard Modules',
     'Franck Paul',
-    '2.1',
+    '2.2',
     [
         'requires'    => [['core', '2.26']],
         'permissions' => dcCore::app()->auth->makePermissions([
