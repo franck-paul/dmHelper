@@ -15,34 +15,31 @@ declare(strict_types=1);
 namespace Dotclear\Plugin\dmHelper;
 
 use dcCore;
-use dcNsProcess;
+use Dotclear\Core\Process;
 
-class Backend extends dcNsProcess
+class Backend extends Process
 {
-    protected static $init = false; /** @deprecated since 2.27 */
     public static function init(): bool
     {
-        static::$init = My::checkContext(My::BACKEND);
-
         // dead but useful code, in order to have translations
         __('Dashboard Module Helper Library') . __('Helper library for Dashboard Modules');
 
-        return static::$init;
+        return self::status(My::checkContext(My::BACKEND));
     }
 
     public static function process(): bool
     {
-        if (!static::$init) {
+        if (!self::status()) {
             return false;
         }
 
         // Dashboard behaviours
         dcCore::app()->addBehaviors([
-            'adminDashboardHeaders' => [BackendBehaviors::class, 'adminDashboardHeaders'],
+            'adminDashboardHeaders' => BackendBehaviors::adminDashboardHeaders(...),
         ]);
 
         // Register REST methods
-        dcCore::app()->rest->addFunction('dmHelperPing', [BackendRest::class, 'ping']);
+        dcCore::app()->rest->addFunction('dmHelperPing', BackendRest::ping(...));
 
         return true;
     }

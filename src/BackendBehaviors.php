@@ -14,15 +14,12 @@ declare(strict_types=1);
 
 namespace Dotclear\Plugin\dmHelper;
 
-use dcCore;
-use dcPage;
-
 class BackendBehaviors
 {
     public static function adminDashboardHeaders()
     {
         return
-        dcPage::jsModuleLoad(My::id() . '/js/service.js', dcCore::app()->getVersion('dmHelper')) .
-        dcPage::cssModuleLoad(My::id() . '/css/style.css', 'screen', dcCore::app()->getVersion('dmHelper'));
+        My::jsLoad('service.js') .
+        My::cssLoad('style.css');
     }
 }
