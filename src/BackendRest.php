@@ -19,7 +19,7 @@ class BackendRest
     /**
      * Serve method to ping current server.
      *
-     * @return     array   The payload.
+     * @return     array<string, mixed>   The payload.
      */
     public static function ping(): array
     {

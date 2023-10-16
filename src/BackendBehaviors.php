@@ -16,7 +16,7 @@ namespace Dotclear\Plugin\dmHelper;
 
 class BackendBehaviors
 {
-    public static function adminDashboardHeaders()
+    public static function adminDashboardHeaders(): string
     {
         return
         My::jsLoad('service.js') .
