@@ -14,7 +14,7 @@ declare(strict_types=1);
 
 namespace Dotclear\Plugin\dmHelper;
 
-use dcCore;
+use Dotclear\App;
 use Dotclear\Core\Process;
 
 class Backend extends Process
@@ -34,12 +34,12 @@ class Backend extends Process
         }
 
         // Dashboard behaviours
-        dcCore::app()->addBehaviors([
+        App::behavior()->addBehaviors([
             'adminDashboardHeaders' => BackendBehaviors::adminDashboardHeaders(...),
         ]);
 
         // Register REST methods
-        dcCore::app()->rest->addFunction('dmHelperPing', BackendRest::ping(...));
+        App::rest()->addFunction('dmHelperPing', BackendRest::ping(...));
 
         return true;
     }
