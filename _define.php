@@ -14,7 +14,7 @@ $this->registerModule(
     'Dashboard Module Helper Library',
     'Helper library for Dashboard Modules',
     'Franck Paul',
-    '4.2',
+    '4.2.1',
     [
         'requires'    => [['core', '2.28']],
         'permissions' => 'My',
