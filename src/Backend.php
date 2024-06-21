@@ -35,6 +35,7 @@ class Backend extends Process
 
         // Dashboard behaviours
         App::behavior()->addBehaviors([
+            'adminPageHTMLHead'     => BackendBehaviors::adminPageHTMLHead(...),
             'adminDashboardHeaders' => BackendBehaviors::adminDashboardHeaders(...),
         ]);
 

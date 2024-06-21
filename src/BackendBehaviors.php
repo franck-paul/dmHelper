@@ -19,7 +19,14 @@ class BackendBehaviors
     public static function adminDashboardHeaders(): string
     {
         return
-        My::jsLoad('service.js') .
         My::cssLoad('style.css');
+    }
+
+    public static function adminPageHTMLHead(): string
+    {
+        echo
+        My::jsLoad('service.js');
+
+        return '';
     }
 }
