@@ -25,5 +25,6 @@ $this->registerModule(
         'details'    => 'https://open-time.net/?q=dmHelper',
         'support'    => 'https://github.com/franck-paul/dmHelper',
         'repository' => 'https://raw.githubusercontent.com/franck-paul/dmHelper/main/dcstore.xml',
+        'license'    => 'gpl2',
     ]
 );
