@@ -15,9 +15,9 @@ $this->registerModule(
     'Dashboard Module Helper Library',
     'Helper library for Dashboard Modules',
     'Franck Paul',
-    '6.0',
+    '6.1',
     [
-        'date'        => '2025-09-07T16:08:50+0200',
+        'date'        => '2025-09-11T10:01:08+0200',
         'requires'    => [['core', '2.36']],
         'permissions' => 'My',
         'type'        => 'plugin',
