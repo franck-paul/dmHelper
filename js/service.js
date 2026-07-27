@@ -29,6 +29,8 @@ dotclear.ready(() => {
       li.style.display = li.style.display === 'none' ? '' : 'none';
       line.classList.toggle('expand');
     } else {
+      if (dotclear.dmOnline() === false) return;
+
       // Get comment content if possible
       dotclear.getCommentContent(
         commentId,
@@ -73,6 +75,8 @@ dotclear.ready(() => {
       li.style.display = li.style.display === 'none' ? '' : 'none';
       line.classList.toggle('expand');
     } else {
+      if (dotclear.dmOnline() === false) return;
+
       // Get content
       dotclear.getEntryContent(
         postId,
