@@ -7,7 +7,7 @@ dotclear.ready(() => {
    *
    * @return     {?boolean}  true/false depending on connection, null if cannot be tested
    */
-  dotclear.dmOnline = () => ('onLine' in navigator ? navigator.onLine : null);
+  dotclear.dmOnline = () => ('onLine' in navigator && !dotclear?.debug ? navigator.onLine : null);
 
   /**
    * Show/Hide comment content
