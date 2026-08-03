@@ -1,12 +1,12 @@
 <modules xmlns:da="http://dotaddict.org/da/">
   <module id="dmHelper">
     <name>Dashboard Module Helper Library</name>
-    <version>6.1</version>
+    <version>7.0</version>
     <author>Franck Paul</author>
     <desc>Helper library for Dashboard Modules</desc>
-    <date>2025-09-11T10:01:08+0200</date>
-    <file>https://github.com/franck-paul/dmHelper/releases/download/6.1/plugin-dmHelper-6.1.zip</file>
-    <da:dcmin>2.36</da:dcmin>
+    <date>2026-08-03T09:52:11+0200</date>
+    <file>https://github.com/franck-paul/dmHelper/releases/download/7.0/plugin-dmHelper-7.0.zip</file>
+    <da:dcmin>2.39</da:dcmin>
     <da:details>https://dotclear.org/plugin/detail/dmHelper</da:details>
     <da:support>https://github.com/franck-paul/dmHelper</da:support>
   </module>
