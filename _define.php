@@ -15,10 +15,10 @@ $this->registerModule(
     'Dashboard Module Helper Library',
     'Helper library for Dashboard Modules',
     'Franck Paul',
-    '6.1',
+    '7.0',
     [
-        'date'        => '2025-09-11T10:01:08+0200',
-        'requires'    => [['core', '2.36']],
+        'date'        => '2026-08-03T09:52:11+0200',
+        'requires'    => [['core', '2.39']],
         'permissions' => 'My',
         'type'        => 'plugin',
 
