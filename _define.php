@@ -11,20 +11,24 @@
  * @copyright Franck Paul contact@open-time.net
  * @copyright GPL-2.0 https://www.gnu.org/licenses/gpl-2.0.html
  */
-$this->registerModule(
-    'Dashboard Module Helper Library',
-    'Helper library for Dashboard Modules',
-    'Franck Paul',
-    '7.0',
-    [
-        'date'        => '2026-08-03T09:52:11+0200',
-        'requires'    => [['core', '2.39']],
-        'permissions' => 'My',
-        'type'        => 'plugin',
+declare(strict_types=1);
 
-        'details'    => 'https://open-time.net/?q=dmHelper',
-        'support'    => 'https://github.com/franck-paul/dmHelper',
-        'repository' => 'https://raw.githubusercontent.com/franck-paul/dmHelper/main/dcstore.xml',
-        'license'    => 'gpl2',
-    ]
-);
+if (isset($this) && is_object($this) && method_exists($this, 'registerModule') && isset($this->id) && is_string($this->id)) {
+    $this->registerModule(
+        'Dashboard Module Helper Library',
+        'Helper library for Dashboard Modules',
+        'Franck Paul',
+        '7.0',
+        [
+            'date'        => '2026-08-03T09:52:11+0200',
+            'requires'    => [['core', '2.39']],
+            'permissions' => 'My',
+            'type'        => 'plugin',
+
+            'details'    => 'https://open-time.net/?q=dmHelper',
+            'support'    => 'https://github.com/franck-paul/dmHelper',
+            'repository' => 'https://raw.githubusercontent.com/franck-paul/dmHelper/main/dcstore.xml',
+            'license'    => 'gpl2',
+        ]
+    );
+}
