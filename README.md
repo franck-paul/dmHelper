@@ -3,7 +3,7 @@
 [![Release](https://img.shields.io/github/v/release/franck-paul/dmHelper)](https://github.com/franck-paul/dmHelper/releases)
 [![Date](https://img.shields.io/github/release-date/franck-paul/dmHelper)](https://github.com/franck-paul/dmHelper/releases)
 [![Issues](https://img.shields.io/github/issues/franck-paul/dmHelper)](https://github.com/franck-paul/dmHelper/issues)
-[![License](https://img.shields.io/github/license/franck-paul/dmHelper)](https://github.com/franck-paul/dmHelper/blob/master/LICENSE)
+[![License](https://img.shields.io/github/license/franck-paul/dmHelper)](https://github.com/franck-paul/dmHelper/blob/main/LICENSE)
 
 Dotclear 2 plugin
 
