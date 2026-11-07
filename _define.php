@@ -18,9 +18,9 @@ if (isset($this) && is_object($this) && method_exists($this, 'registerModule') &
         'Dashboard Module Helper Library',
         'Helper library for Dashboard Modules',
         'Franck Paul',
-        '7.0',
+        '7.1',
         [
-            'date'        => '2026-08-03T09:52:11+0200',
+            'date'        => '2026-11-07T16:43:02+0100',
             'requires'    => [['core', '2.39']],
             'permissions' => 'My',
             'type'        => 'plugin',
